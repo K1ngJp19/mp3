@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 Player</title>
+</head>
+<body style="margin: 0; padding: 0; height: 100vh; background: url('img/nae.jpg') no-repeat center center fixed; background-size: cover;">
+    <div style="text-align: center; color: white; background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+        <h1>Hi! Welcome To my MP3 Player Made by: John Paul Cu</h1>
+        <audio id="backgroundMusic" loop>
+            <source src="audio/Nae Nia Nae Nae  Wowkie Zhang - Sunshine, Rainbow, White Pony (Easy Lyric Video).mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script>
+            document.body.addEventListener('click', function() {
+            var audio = document.getElementById('backgroundMusic');
+            if (audio.paused) {
+                audio.play();
+            }
+        });
+
+    </script>
+</body>
+</html>
